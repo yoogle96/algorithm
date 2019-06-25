@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.html": "html",
-        "stack": "cpp"
+        "stack": "cpp",
+        "string": "cpp"
     }
 }
