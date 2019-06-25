@@ -2,6 +2,7 @@
     "files.associations": {
         "*.html": "html",
         "stack": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "vector": "cpp"
     }
 }
