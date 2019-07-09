@@ -1,6 +1,4 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558 
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
         {
@@ -21,7 +19,6 @@
             ]
         },
         {
-        
             "label": "build",
             "type": "shell",
             "command": "g++",
@@ -35,7 +32,6 @@
                 "isDefault": true
             },
             "problemMatcher": []
-            
         },
         {
             "label": "exec",
@@ -46,6 +42,20 @@
                 "isDefault": true
             },
             "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "clang++ build active file",
+            "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin"
+            }
         }
     ]
 }
