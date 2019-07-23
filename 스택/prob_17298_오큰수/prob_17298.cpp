@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <auto>
 using namespace std;
 
 int main(){
