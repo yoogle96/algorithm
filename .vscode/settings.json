@@ -17,6 +17,7 @@
         "algorithm": "cpp",
         "iosfwd": "cpp",
         "utility": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "queue": "cpp"
     }
 }
