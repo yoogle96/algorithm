@@ -32,7 +32,7 @@
 //  2
 //  1
 //  0
-
+˜
 #include <cstdio>
 #include <cmath>
 
