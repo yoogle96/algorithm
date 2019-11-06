@@ -6,6 +6,7 @@ int main(){
     while(T--){
         scanf("%d %d", &x, &y);
         dist = y - x;
+        // TODO : i를 int로 선언해주면 범위가 넘어가 시간초과가 난다.. 
         long long i = 1;
         int cnt = 0;
         for(;;i++){
