@@ -1,10 +1,9 @@
 #include <iostream>
-#include <algorithm>
 #include <string>
 
 using namespace std;
 
-int arr[10], ans;
+int arr[10];
 
 int main(){
     string N;
@@ -15,16 +14,19 @@ int main(){
         arr[atoi(&token)]++;
     }
 
-    ans = arr[0];
-
-    for(int i = 1 ; i <= 9; i++){
-        if(ans < arr[i]){
-            ans = arr[i];
-        }
+    int min = arr[0];
+    for(int i = 1; i < 10; i++){
+        if(i == 9 || i == 6) continue;
+        if(min < arr[i]) min = arr[i];
     }
+    int check= arr[6] + arr[9];
 
-    int temp = (arr[6] + arr[9]) / 2;
-    ans -= temp;
+    if(check%2 == 0) check /= 2;
+    else{
+        check /= 2;
+        check++;
+    } 
 
-    cout << ans << endl;
+    if(min < check) min = check;
+    cout << min << endl;
 }
