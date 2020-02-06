@@ -1,42 +1,27 @@
 #include <iostream>
 #include <vector>
-#include <queue>
+#include <stack>
 using namespace std;
 
-vector< priority_queue<int> > v(10);
 int N, P, line, plat, answer;
+vector<stack<int> > v(10);
 int main() {
-    cin >> N;
-    cin >> P;
+    cin >> N >> P;
     while(N--) {
-        cin >> line;
-        cin >> plat;
-        if(!v[line].empty()) {
-            priority_queue<int> temp = v[line];
-            bool flag = false;
-            while(!temp.empty()) {
-                if(temp.top() == plat) {
-                    flag = true;
-                    break;
-                }
-                temp.pop();
-            }
-            if(flag) continue;
-            if(v[line].top() > plat) {
-                while(v[line].top() > plat) {
-                    v[line].pop();
-                    answer++;
-                    if(v[line].empty()) break;
-                }
-                v[line].push(plat);
-            }else {
-                v[line].push(plat);
-            }
-        }else{
+        cin >> line >> plat;
+        if(v[line].empty() || v[line].top() < plat) {
             v[line].push(plat);
+            answer++;
+        } else {
+            while(!v[line].empty() && v[line].top() > plat) {
+                v[line].pop();
+                answer++;
+            }
+            if(!v[line].empty() && v[line].top() == plat) continue;
+            
+            v[line].push(plat);
+            answer++;
         }
-        answer++;
     }
-    cout << answer;
-    
+    cout << answer << endl;
 }
