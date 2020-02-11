@@ -9,15 +9,13 @@ int main() {
         cin >> input;
         v.push_back(input);
     }
-    for(int i = 0; i < N - 1; i++) {
-        bool flag = true;
-        for(int j = i + 1; j < N; j++) {
-            if(v[i] <= v[j]) {
-                flag = false;
-                break;
-            }
-        }   
-        if(flag) answer++;
+    int max = v[N - 1];
+    for(int i = N - 1; i >= 0; i--) {
+        if(max < v[i]) {
+            answer++;
+            max = v[i];
+        }
     }
+
     cout << answer;
 }
