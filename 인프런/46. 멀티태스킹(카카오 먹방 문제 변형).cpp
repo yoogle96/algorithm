@@ -28,9 +28,9 @@ int main() {
     }
 
     while(1) {
-        p++;
         if(p > N) p = 0;
         if(v[p] != 0) break;
+        p++;
     }
     cout << p + 1;
 }
