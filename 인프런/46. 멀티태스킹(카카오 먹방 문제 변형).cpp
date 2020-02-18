@@ -3,8 +3,6 @@
 using namespace std;
 int N, K, p, cnt, total;
 int main() {
-    // freopen("/Users/yoogle/Desktop/yoogle/Programming/BeakJoon/인프런/input.txt", "r", stdin);
-
     cin >> N;
     vector<int> v(N);
 
