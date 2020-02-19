@@ -1,1 +1,12 @@
 freopen("/Users/yoogle/Desktop/yoogle/Programming/BeakJoon/인프런/input.txt", "r", stdin);
+
+
+
+clock_t start, endd;
+double result;
+
+start = clock(); //시간 측정 시작
+
+endd = clock(); //시간 측정 끝
+result = (double)(endd - start);
+cout << "result : " << ((result) / CLOCKS_PER_SEC) << " seconds" << endl;
