@@ -36,7 +36,7 @@ int main() {
             }
         }
     }
-    // 음의 싸이클
+    // 음의 싸이클 검사
     for(int j = 0; j < Ed.size(); j++) {
         int u = Ed[j].s;
         int v = Ed[j].e;
