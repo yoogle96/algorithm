@@ -26,3 +26,4 @@ int sherlockAndAnagrams(string s) {
     }
     return cnt;
 }
+
