@@ -1,3 +1,4 @@
+// 정답
 vector<int> freqQuery(vector<vector<int>> queries) {
     unordered_map<int, int> um;
     vector<int> answer;
@@ -37,7 +38,7 @@ vector<int> freqQuery(vector<vector<int>> queries) {
     return answer;
 }
 
-
+// 오답
 // vector<int> freqQuery(vector<vector<int>> queries) {
 //     unordered_map<int, int> um;
 //     vector<int> answer;
