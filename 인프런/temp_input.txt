@@ -10,3 +10,5 @@ start = clock(); //시간 측정 시작
 endd = clock(); //시간 측정 끝
 result = (double)(endd - start);
 cout << "result : " << ((result) / CLOCKS_PER_SEC) << " seconds" << endl;
+
+ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
