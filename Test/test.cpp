@@ -1,31 +1,16 @@
 #include <iostream>
-#include <iomanip>
-#include <limits>
-
+#include <string>
 using namespace std;
-
+int arr[200];
 int main() {
-    int i = 4;
-    double d = 4.0;
-    string s = "HackerRank ";
+    freopen("/Users/yoogle/Desktop/yoogle/Programming/BeakJoon/인프런/input.txt", "r", stdin);
+    string s;
+    cin >> s;
+    for(int i = 0; i < s.size(); i++) {
+        arr[s[i]]++;
+    }
 
-    int input1;
-    double input2;
-    string input3;
-    cin >> input1;
-    cin >> input2;
-    // cin >> input3;
-    // cin.getline(input3,1000,'\n');
-    // cin.getline(input3, 1000, '\n');
-    getline(cin, input3);
-    
-
-    cout << input3;
-    // i += input1;
-    // d += (double)input2;
-    // cout << i << endl;
-    // cout << d << endl;
-    // cout << s << input3 << endl;
-
-    return 0;
+    for(int i = 97; i <= 122; i++) {
+        cout << (char)i << " : " << arr[i] << endl;
+    }
 }
