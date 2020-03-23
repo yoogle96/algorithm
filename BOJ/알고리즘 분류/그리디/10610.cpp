@@ -31,7 +31,7 @@ int main(){
 
     // 전체 합 구해보자
     int now_sum = 0 ;
-    for ( int num_idx = 1 ; num_idx < DECI ; num_idx++){ㅌ2ㅌ2ㅌㅈ
+    for ( int num_idx = 1 ; num_idx < DECI ; num_idx++){
         now_sum += number_vec[num_idx]*num_idx;
     }
 
