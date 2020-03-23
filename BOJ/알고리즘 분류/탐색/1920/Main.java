@@ -1,6 +1,5 @@
 import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Main {
 
@@ -23,5 +22,6 @@ public class Main {
                 System.out.println(0);
             }
         }
+        scanner.close();
     }
 }
