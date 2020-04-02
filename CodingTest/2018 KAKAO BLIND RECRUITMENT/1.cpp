@@ -14,6 +14,3 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
     }
     return answer;
 }
-int main() {
-    solution(5, {9, 20, 28, 18, 11}, {30, 1, 21, 17, 28});
-}
