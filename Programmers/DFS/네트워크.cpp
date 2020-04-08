@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int ans, arr[501];
+int ans, arr[201];
 
 int find(int a) {
     if(a == arr[a]) return a;
@@ -22,11 +22,9 @@ int solution(int n, vector<vector<int>> computers) {
         }
     }
     set<int> s;
-    for(int i = 1; i <= n; i++) s.insert(arr[i]);
+    for(int i = 1; i <= n; i++) {
+        s.insert(find(arr[i]));
+    }
     ans = s.size();
     return ans;
-}
-
-int main() {
-    cout << solution(4, {{1,0,0,1},{0,1,1,1},{0,1,1,0},{1,1,0,1}}) << endl;
 }
