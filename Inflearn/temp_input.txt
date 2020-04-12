@@ -1,4 +1,4 @@
-freopen("/Users/yoogle/Desktop/yoogle/Programming/BeakJoon/인프런/input.txt", "r", stdin);
+freopen("/Users/yoogle/Desktop/yoogle/Programming/BeakJoon/Inflearn/input.txt", "r", stdin);
 
 
 
