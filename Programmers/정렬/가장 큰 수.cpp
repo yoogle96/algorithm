@@ -36,7 +36,7 @@ string solution(vector<int> numbers) {
     for(auto t : numbers) {
         string tkn = to_string(t);
         ans += tkn;
-    }   
+    }
     return ans;
 }
 
